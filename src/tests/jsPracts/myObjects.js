@@ -63,3 +63,47 @@ console.log(advMovie.cast.leadActor);
 console.log(!advMovie.cast._500Cr);
 console.log(advMovie.cast.childActed);
 console.log(advMovie.cast.day);
+
+let meals = {
+    bf: {
+        bread: "Bread",
+        paste:"Butter",
+        drink: "Milk",
+        sweet: "Curd Sugar"
+    },
+    lunch: {
+        bread: "Rice",
+        paste: "Pickle",
+        drink: "Butter Milk",
+        sweet: "barfi"
+    },
+    dinner:{
+        bread: "Rice and Roti",
+        paste: "mashed potato",
+        drink: "Milk",
+        sweet: "Chocolate milk"
+    },
+
+    bfFood: function(){
+        return this.bf.bread+" "+this.bf.paste+" "+ this.bf.drink+" "+this.bf.sweet;
+    },
+
+    lunchFood: function(){
+        return this.lunch.bread+" "+this.lunch.paste+" "+ this.lunch.drink+" "+this.lunch.sweet;
+    },
+
+    dinnerFood: function(){
+        return this.dinner.bread+" "+this.dinner.paste+" "+ this.dinner.drink+" "+this.dinner.sweet;
+    }
+}
+
+console.log("Breakfast: "+meals.bfFood());
+console.log("Lunch: "+meals.lunchFood());
+console.log("Dinner: "+meals.dinnerFood());
+
+meals.supper = function(){
+    return (this.bf.bread+" "+this.lunch.paste+" "+this.dinner.sweet).toUpperCase();
+}
+
+
+console.log("Supper: "+meals.supper());
