@@ -52,7 +52,7 @@ function tempConversion(str){
 
 }
 
-console.log(tempConversion("3F"));
+console.log("Conversion --> " + tempConversion("3F"));
 console.log(tempConversion("33C"));
 console.log(tempConversion("38D"));
 console.log(tempConversion("38K"));
@@ -60,3 +60,5 @@ console.log(tempConversion("38K"));
 let str = "123t";
 
 console.log(str.substring(str.length-1,str.length)=="s");
+
+
