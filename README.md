@@ -41,7 +41,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/javascript-examples.git
+git clone https://github.com/hmdraza9/LearnJavaScript.git
 cd javascript-examples
 Run each file to see the outputs:
 
