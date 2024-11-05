@@ -1,3 +1,4 @@
+//https://www.w3schools.com/js/js_object_protection.asp
 const Animal = {};
 
 Animal.name = "Lion";
