@@ -31,3 +31,85 @@ function findMax(){
 
 console.log(findMax(90,1,2,12,3,19,4));
 
+//https://www.w3schools.com/js/js_function_invocation.asp
+
+const packet = {
+
+    type: "Food",
+    weight: 2,
+    shape: "cuboid",
+    color: "brown",
+    fragile: false,
+    recyclable: true,
+    fullDetail: function(){
+        return this.type+", "+this.weight+"kg, "+this.shape+", "+this.color+", "+this.fragile+", "+this.recyclable;
+        // return packet===this;
+    }
+}
+
+console.log(`Package  detail: ${packet.fullDetail()}`);
+
+//https://www.w3schools.com/js/js_function_call.asp
+
+const person = {
+    fullName : function(){
+        return this.salutation + " - "+ this.fname + " "+this.lname;
+    }
+}
+
+const person1 = {
+    salutation: "Person 1",
+    fname : "John",
+    lname : "Doe"
+}
+
+const person2 = {
+    salutation: "Person 2",
+    fname : "Harry",
+    lname : "Potter"
+}
+
+console.log(person.fullName.call(person2));
+
+
+
+const place = {
+    fullAddress : function(city, state){
+        return this.houseNum + " - "+ this.fname + " "+this.lname+", "+city+", "+state;
+    }
+}
+
+const place1 = {
+    houseNum: "111",
+    fname : "Will",
+    lname : "Smith"
+}
+
+const place2 = {
+    houseNum: "222",
+    fname : "Ron",
+    lname : "Weasely"
+}
+
+console.log(place.fullAddress.call(place1, "New Delhi", "Delhi"));
+
+const newPerson = {
+    fname : "Amit",
+    lname : "Kumar",
+    fullname : function(){
+        return this.fname+ " " +this.lname;
+    }
+}
+
+const member = {
+    fname : "Nelson",
+    lname : "Mandela"
+}
+
+let FullName = newPerson.fullname.bind(member);
+
+console.log(FullName());
+
+//https://www.w3schools.com/js/js_function_closures.asp
+//JavaScript Closures / Function Closures
+
