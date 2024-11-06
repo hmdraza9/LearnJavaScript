@@ -109,7 +109,3 @@ const member = {
 let FullName = newPerson.fullname.bind(member);
 
 console.log(FullName());
-
-//https://www.w3schools.com/js/js_function_closures.asp
-//JavaScript Closures / Function Closures
-
