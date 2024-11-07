@@ -1,7 +1,3 @@
-Here's a README template for your repository:
-
----
-
 # LearnJavaScript
 
 A beginner-friendly repository for practicing essential JavaScript concepts, including basic operations, object manipulations, variable scopes, and math utilities.
