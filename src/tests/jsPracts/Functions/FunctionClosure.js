@@ -36,3 +36,28 @@ const secretHolder = createSecretHolder("my secret");
 console.log(secretHolder.getsecret());
 secretHolder.setSecret("my new secret");
 console.log(secretHolder.getsecret());
+
+
+const date = new Date();
+
+console.log(date.getFullYear());
+date.setFullYear(date.getFullYear()-3);
+console.log(date.getFullYear());
+
+class Car{
+
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+
+    age() {
+
+        const date = new Date();
+        return date.getFullYear()-this.year;
+
+    }
+}
+
+const car = new Car("Ford", 2019);
+console.log("My car is "+car.age()+" years old!");
