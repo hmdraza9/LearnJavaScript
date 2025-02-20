@@ -42,3 +42,10 @@ node src/yourFile.js
 ## Contributing
 
 Contributions are welcome!
+
+
+***These commands are commonly used in Node.js and npm (Node Package Manager) for troubleshooting dependency issues. Here’s what they do:***
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
